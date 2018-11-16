@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Porzą</title>
+
+	<!-- Material Design Theming -->
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	<link rel="stylesheet" href=" main.css">
+
+	<!-- Custom -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="./favicon.ico">
+	<link rel="author" href="./" />
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-auth.js"></script>
+	<script>
+		var config = {
+		  apiKey: "AIzaSyD-jqJrkcJVYvT5junv2ME3sxY--uh0dMU"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+</head>
+
+<body>
+	<!-- <div class="loading-background hide">
+		<div id="spinner">
+			<div class="lds-facebook">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div> -->
+	
+	 <main class="mdl-layout__content mdl-color--grey-100">
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-grid">
+
+		<!-- Container for the demo -->
+		<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+			<div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+			<h2 class="mdl-card__title-text">Zaloguj się</h2>
+			</div>
+			<div class="mdl-card__supporting-text mdl-color-text--grey-600">
+			<p>Wpisz swoje dane i kliknij 'Zaloguj się' aby wyświetlić punktację</p>
+
+			<input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+			&nbsp;&nbsp;&nbsp;
+			<input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Hasło"/>
+			<br/><br/>
+			<div class="mdl-layout-spacer"></div>
+			<button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+			&nbsp;&nbsp;&nbsp;
+			<!-- <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+			&nbsp;&nbsp;&nbsp;
+			<button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+			&nbsp;&nbsp;&nbsp;
+			<button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button> -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+	<script type="text/javascript" src="signIn.js"></script>
+</body>
+
+</html>

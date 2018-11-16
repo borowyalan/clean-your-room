@@ -1,0 +1,18 @@
+{
+  "name": "excel_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^1.6.2",
+    "node-fetch": "^2.2.0",
+    "node-notifier": "^5.3.0"
+  }
+}

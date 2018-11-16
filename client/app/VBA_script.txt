@@ -1,0 +1,3 @@
+Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
+Shell "cmd.exe /k cd " & ThisWorkbook.path & "&&start.bat & exit"
+End Sub
